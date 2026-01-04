@@ -1,0 +1,43 @@
+#container {
+    background-color: #CED0BA;
+    height: 700px;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+#linha {
+    margin-top: 84px;
+    margin-left: 54px;
+    height: 1px;
+    width: 700px;
+    background-color: black;
+}
+/* colocar no 'centro' da div, com o texto alinhado a esquerda*/
+.encontreTitulo{
+    font-family: 'Kokoro', sans-serif;
+    margin-top:10%;
+    margin-left:15%;
+    width: 50%; 
+    line-height: 1.3;
+   
+}
+.encontreTitulo h1{
+     font-size:3em;
+}
+.encontreTitulo span{
+    font-family:'Cinzel', serif;
+    color: #8E564F;
+    display:block;
+    padding-top:10px;
+    font-weight: 600;
+
+}
+.encontreTitulo p{
+    margin:10% 0 10% 0;
+    font-size:1.2em;
+}
+img#imgHero {
+    height: 700px;
+    width: 800px;
+}
