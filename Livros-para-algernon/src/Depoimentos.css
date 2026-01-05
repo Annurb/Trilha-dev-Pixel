@@ -1,0 +1,26 @@
+.containerDepoimentos{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    justify-items:center;
+    text-align:center;
+}
+h1.tituloDepo{
+    margin-top: 60px;
+    grid-column:1/-1;
+}
+.h2Depo{
+    grid-column:1/-1;
+    font-size:2em;
+    margin-bottom: 10px;
+}
+.cardDepo{
+    height:300px;
+    width:600px;
+    border-radius:15px;
+}
+.cardDepo:nth-of-type(2n){
+    background-color: #F2EFCE;
+}
+.cardDepo:nth-of-type(2n-1){
+    background-color: #F3DDB6;
+}

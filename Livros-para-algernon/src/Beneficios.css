@@ -1,0 +1,25 @@
+.beneficiosContainer{
+    height: 600px;
+    background-color: #F2EFCE;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    justify-items:center;
+    text-align:center;
+    row-gap: 0;
+}
+h1.tituloBene{
+    margin-top: 2em;
+    margin-left:2em;
+    margin-bottom:0;
+    grid-column:1/-1;
+    justify-self:left;
+}
+.h2Bene{
+    margin-top:-40px;
+   font-size: 2em; 
+   font-weight: 700;
+}
+.itensBene{
+    margin-top:-60px;
+    width:340px;
+}

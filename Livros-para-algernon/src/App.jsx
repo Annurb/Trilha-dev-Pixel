@@ -2,6 +2,8 @@ import './App.css'
 import Navbar from './Navbar'
 import HeroSection from './HeroSection'
 import Sobre from './Sobre'
+import Beneficios from './Beneficios'
+import Depoimentos from './Depoimentos'
 
 function App() {
 
@@ -10,6 +12,8 @@ function App() {
     <Navbar/>
     <HeroSection/>
     <Sobre/>
+    <Beneficios/>
+    <Depoimentos/>
     <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, aliquam saepe odio ea iusto architecto itaque vero ad quia consequuntur, nemo aperiam fugit dicta et placeat magnam, aut expedita ducimus.
     Beatae quia, nobis debitis omnis quae sunt dolorem ipsum reiciendis adipisci laboriosam expedita! Magnam enim earum, architecto officia eos ipsam doloremque delectus tenetur odit consectetur tempora sunt dolore obcaecati a.
     Ut numquam id hic, voluptatibus fugiat facilis ad quibusdam maxime perspiciatis distinctio inventore porro molestiae quas facere consectetur fugit dignissimos odit at voluptates. Repellendus voluptatem molestiae delectus doloremque eos non.

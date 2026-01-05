@@ -1,0 +1,15 @@
+h3, h1, h2, p{
+    font-family: 'Inter', sans-serif;
+}
+h3{
+    margin-top:5%;
+    font-weight:600;
+    font-size:1.2em;
+}
+h1{
+    font-size:2.2em;
+    font-weight:700;
+}
+p{
+    font-size:1.5em;
+}
