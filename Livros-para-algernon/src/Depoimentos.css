@@ -9,18 +9,52 @@ h1.tituloDepo{
     grid-column:1/-1;
 }
 .h2Depo{
+    margin-top: 17px;
     grid-column:1/-1;
     font-size:2em;
-    margin-bottom: 10px;
+    margin-bottom: 1.3em;
 }
 .cardDepo{
+    margin: 30px;
     height:300px;
     width:600px;
     border-radius:15px;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    justify-items:left;
+    text-align:left;
+    row-gap: 0;
 }
-.cardDepo:nth-of-type(2n){
+.cardDepo:nth-of-type(n){
     background-color: #F2EFCE;
 }
-.cardDepo:nth-of-type(2n-1){
+.cardDepo:nth-of-type(2){
     background-color: #F3DDB6;
+}
+.colunaDepo{
+    grid-column:1/-1;
+}
+.colunaDepo.aspas{
+   margin-left:24px;
+   margin-top: 16px;
+}
+.textoCliente{
+    margin-left:55px;
+
+}
+.colunaDepo.texto{
+    width: 460px;
+    font-size:1.2em;
+}
+.linhaDepo{
+    grid-row:span 2;
+}
+.nomeNota{
+    margin-left:-140px;
+}
+.nomeNota.nomeCliente{
+    margin-top: 12px;
+    margin-bottom: -2em;
+    font-size:1.2em;
+    font-weight:600;
 }
