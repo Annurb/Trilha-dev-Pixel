@@ -24,12 +24,7 @@ h1.tituloDepo{
     justify-items:left;
     text-align:left;
     row-gap: 0;
-}
-.cardDepo:nth-of-type(n){
-    background-color: #F2EFCE;
-}
-.cardDepo:nth-of-type(2){
-    background-color: #F3DDB6;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.036);
 }
 .colunaDepo{
     grid-column:1/-1;

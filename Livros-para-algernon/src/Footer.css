@@ -1,0 +1,55 @@
+.footerContainer{
+    height:350px;
+    background-color: #8E564F;
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    justify-items:left;
+    text-align:left;
+    row-gap: 0;
+}
+.footerContainer img{
+    margin-top:45px;
+    margin-left:80px;
+    margin-bottom:18px;
+    height:80px;
+    grid-column:1/-1;
+}
+.footerContainer p, ul{
+    width: 400px;
+}
+.footerContainer p, li{
+    margin-left:80px;
+    color:white;
+    font-weight:400;
+    line-height:1.2em;
+}
+.copyrightLinha{
+    display: flex;
+    align-items: left;
+    gap: 8px;
+}
+.copyrightLinha p{
+    margin:0;
+    margin-top:2px; 
+}
+.copyrightLinha img{
+    height:24px;
+    margin-top: 4px;
+}
+.footerContainer a{
+    text-decoration:none;
+}
+.footerBaixo{
+    margin-top:42px;
+    height:50px;
+    width:100%;
+    grid-column: 1/-1;
+    background-color: #532728;
+    display: flex;
+    justify-content:flex-end;
+    align-items:center; 
+}
+.footerBaixo img{
+    height: 28px;
+    margin:8px;
+}

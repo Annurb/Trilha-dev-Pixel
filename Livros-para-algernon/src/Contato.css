@@ -1,0 +1,55 @@
+.containerContato{
+    display:flex;
+    justify-content:center;
+    margin:40px 0 40px 0;
+}
+.boxContato{
+    border:1px solid #AAAAAA;
+    border-radius:10px;
+    height:700px;
+    width:80%;
+    align-self:center;
+    display:flex;
+    flex-direction:column;
+}
+.boxContato h1{
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:-10px;
+}   
+.boxContato h3{
+    font-family: 'inter', sans-serif;
+    font-size:1.5em;
+    font-weight:400;
+}
+.boxContato h3, input, button, textArea{
+    margin-left:5%;
+
+}
+.boxContato button{
+    margin:0 auto;
+    margin-top:20px;
+}
+.boxContato h3{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.boxContato input, textArea{
+    border-radius:10px;
+    border: 1px solid #9E9E9E ;
+    font-size:1.5em;
+    padding-left:20px;
+
+}
+.boxContato input{
+    height:60px;
+    width:480px;
+    
+}
+.boxContato textArea{
+    width:87%;
+    height:200px;
+    padding-top:15px;
+    font-family:'inter', sans-serif;
+    resize:none;
+}
