@@ -20,3 +20,12 @@ font-size:1.3em;
     font-size:1.5em;
     display: block;
 }
+.adicionarCarrinho{
+    background-color: #8E564F;
+    font-size:1.5em;
+    width: 260px;
+    height:40px;
+    color:#F2EFCE;
+    border-radius:15px;
+
+}

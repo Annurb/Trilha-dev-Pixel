@@ -31,7 +31,7 @@ export default function Contato() {
   }
 
   return (
-    <div className='containerContato'>
+    <div className='containerContato' id='contato'>
       <div className='boxContato'>
         <h1>Contato: </h1>
         <form onSubmit={enviaEmail} >

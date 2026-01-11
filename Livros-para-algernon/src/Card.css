@@ -1,0 +1,49 @@
+.card {
+  width: 300px;
+  height: 500px;
+  border-radius:15px;
+  border:1px solid #CED0BA;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  text-align:center;
+  margin-right:100px;
+}
+.cardImg{
+    background-color:#CED0BA;
+    border-radius:15px 15px 0 0;
+    display:flex;
+    justify-content: center;
+    height:300px;
+    width:100%;
+}
+.cardImg img{
+    height:300px;
+}
+.itemPrices{
+    display:flex;
+    font-weight:600;
+}
+.cardNome, .cardAutor, .cardCapa{
+    font-size:1.3em;
+    margin:2px;
+}
+.cardNome{
+    margin-top:20px;
+}
+.cardAutor{
+    color: #949683;
+}
+.cardCapa{
+    color: #8E564F;
+}
+
+.cardPreco{
+    font-size:2em;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+.cardPreco span{
+    font-size:1.2rem;
+    margin-right:3px;
+}

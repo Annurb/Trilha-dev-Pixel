@@ -13,3 +13,10 @@ h1{
 p, li{
     font-size:1.5em;
 }
+
+html, body {
+  overflow-x: hidden;
+}
+html{
+    scroll-behavior:smooth;
+}

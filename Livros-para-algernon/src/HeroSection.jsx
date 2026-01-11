@@ -10,7 +10,7 @@ export default function HeroSection(){
             <div id='linha'></div>
         <div className='encontreTitulo'><h1>ENCONTRE OS MELHORES <span>LIVROS</span></h1>
         <p>Leia, ame e desfrute cada momento com seu livro</p>
-        <button className='buttonChamada'>COMPRE AGORA</button></div>
+        <a href="#livros"><button className='buttonChamada'>COMPRE AGORA</button></a></div>
         </div>
         </div>
     )

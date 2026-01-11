@@ -1,0 +1,42 @@
+.Catalogo{
+    margin-bottom:100px;
+}
+.slick-slider {
+  position: relative;
+}
+
+.slick-slide > div {
+  padding: 0 40px;
+}
+
+.slick-list {
+  margin: 0 auto;
+}
+@media(max-width:1000px){
+    .slick-slide > div {
+  padding: 0 20px;
+}}
+@media(max-width:700px){
+    .slick-slide > div {
+  padding: 0 10px;
+}}
+
+.slick-prev,
+.slick-next {
+  z-index: 10;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #8E564F;
+  font-size: 30px;
+}
+
+
+.slick-prev {
+    margin-left:60px;
+}
+
+.slick-next {
+  right: 40px;
+}

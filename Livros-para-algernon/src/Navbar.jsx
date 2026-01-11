@@ -7,14 +7,12 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import logo from './Imagem/Logo.png'
 import './Navbar.css'
 
-const pages = ['SOBRE', 'BENEFÍCIOS', 'DEPOIMENTOS', 'CONTATO'];
+const pages = [{label:'SOBRE', href:'#containerSobre'}, {label:'BENEFÍCIOS', href:'#beneficios'}, {label:'DEPOIMENTOS', href:'#depoimentos'}, {label:'CONTATO', href:'#contato'}];
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -58,8 +56,13 @@ function Navbar() {
               sx={{ display: { xs: 'block', md: 'none' } }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
+                <MenuItem key={page.label} onClick={handleCloseNavMenu}>
+                  <Typography component="a"
+      href={page.href}
+      sx={{
+        textAlign: 'center',
+        textDecoration: 'none',
+        color: 'inherit'}}>{page.label}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -67,11 +70,12 @@ function Navbar() {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
-                key={page}
-                onClick={handleCloseNavMenu}
+                key={page.label}
+                component="a"
+                href={page.href}
                 sx={{ my: 2, color: 'black', display: 'block' }}
               >
-                {page}
+                {page.label}
               </Button>
             ))}
           </Box>

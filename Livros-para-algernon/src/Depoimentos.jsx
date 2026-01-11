@@ -9,7 +9,7 @@ import CardsDepo from './CardsDepo'
 
 export default function Depoimentos(){
     return(
-        <div className='containerDepoimentos'>
+        <div className='containerDepoimentos' id='depoimentos'>
             <h1 className='tituloDepo'>Depoimentos: </h1>
             <h2 className='h2Depo'>Leia o que nossos clientes dizem</h2>
             <CardsDepo nome='Ana S.' texto='O Livros para Algernon é o meu refúgio favorito. A curadoria é impecável e sempre encontro edições raras que parecem ter sido escolhidas a dedo para mim. É mais que um sebo, é uma experiência literária.' imagemCliente={cliente1} nota={estrelasNota}/>

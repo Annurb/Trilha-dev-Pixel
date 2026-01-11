@@ -5,7 +5,7 @@ import './Beneficios.css'
 
 export default function Beneficios(){
     return(
-        <div className='beneficiosContainer'>
+        <div className='beneficiosContainer' id='beneficios'>
             <h1 className='tituloBene'>Benefícios:</h1>
             <img  src={bene1} alt="Benefício 1" />
             <img src={bene2} alt="Benefício 2" />

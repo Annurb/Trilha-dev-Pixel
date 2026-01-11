@@ -6,7 +6,9 @@ import Beneficios from './Beneficios'
 import Depoimentos from './Depoimentos'
 import Contato from './Contato'
 import Footer from './Footer'
-import Catalogo from './Catalogo'
+import Livros from './Livros'
+import Card from './Card'
+import bomdiave from './LivrosImagem/Bom dia, verônica.webp'
 
 function App() {
 
@@ -16,8 +18,8 @@ function App() {
     <HeroSection/>
     <Sobre/>
     <Beneficios/>
-    <Catalogo/>
     <Depoimentos/>
+    <Livros/>
     <Contato/>
     <Footer/>
    </>

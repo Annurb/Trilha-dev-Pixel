@@ -10,10 +10,9 @@
     margin-top: 84px;
     margin-left: 54px;
     height: 1px;
-    width: 700px;
+    width: 600px;
     background-color: black;
 }
-/* colocar no 'centro' da div, com o texto alinhado a esquerda*/
 .encontreTitulo{
     font-family: 'Kokoro', sans-serif;
     margin-top:10%;
