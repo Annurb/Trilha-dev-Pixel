@@ -1,7 +1,7 @@
 import bene1 from './Imagem/bene1.png'
 import bene2 from './Imagem/bene2.png'
 import bene3 from './Imagem/bene3.png'
-import './Beneficios.css'
+import './Style/Beneficios.css'
 
 export default function Beneficios(){
     return(

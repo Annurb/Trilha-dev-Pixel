@@ -1,0 +1,85 @@
+.livroDetalhe{
+    margin:40px;
+
+}
+.detalheEVoltar{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom: 40px;
+}
+.flexDetalhe{
+    display:flex;
+    justify-content: space-between;
+}
+.imgDetalhe{
+    background-color:#aaaa;
+    height:580px;
+    width: 500px;
+    display:flex;
+    justify-content:center;
+    border-radius:10px;
+}
+.imgDetalhe img{
+    height:580px;
+}
+.detalheTexto{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    max-width:350px;
+
+}
+.detalheTexto h1{
+    font-size:2em;
+    margin-bottom: 20px;
+}
+.detalheTexto h2{
+    font-size:1.5em;
+    color:#aaa;
+}
+.detalheTexto h3{
+    font-size:1.3em;
+    color:#8E564F;
+    font-weight: 200;
+    margin-bottom:20px;
+}
+.detalheScroll{
+    max-height: 400px;
+    width:300px;
+    border:1px solid #ced0ba;
+    border-radius:5px;
+    overflow-y:scroll;
+    padding:20px;
+    scrollbar-width: thin;
+
+}
+.detalheScroll p{
+    text-align:justify;
+}
+.linhaDetalhe{
+    height:600px;
+    width:1px;
+    background-color:#ced0ba;
+}
+.precoDetalhe{
+    display:flex;
+    max-width:270px;
+    justify-content:space-around;
+    flex-direction: column;
+    align-items:center;
+    text-align:center;
+    margin-right:2em;
+
+}
+.precoDetalhe h2{
+    font-size:1.7em;
+}
+.precoDetalhe h1{
+    font-size:3em;
+}
+.precoDetalhe span{
+    font-size:0.5em;
+}
+.buttonAdicionar button{
+    margin-bottom:10px;
+}

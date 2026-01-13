@@ -1,12 +1,13 @@
 .Catalogo{
     margin-bottom:100px;
+    
 }
 .slick-slider {
   position: relative;
 }
 
 .slick-slide > div {
-  padding: 0 40px;
+  padding: 0 20px;
 }
 
 .slick-list {
@@ -14,7 +15,7 @@
 }
 @media(max-width:1000px){
     .slick-slide > div {
-  padding: 0 20px;
+  padding: 0 10px;
 }}
 @media(max-width:700px){
     .slick-slide > div {
@@ -39,4 +40,15 @@
 
 .slick-next {
   right: 40px;
+}
+.linkCard{
+  text-decoration:none;
+  color:black;
+  display:block;
+}
+.linkCard:visited{
+  color:black;
+}
+.linkCard:hover{
+  color:black;
 }

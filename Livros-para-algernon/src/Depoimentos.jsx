@@ -1,4 +1,4 @@
-import './Depoimentos.css'
+import './Style/Depoimentos.css'
 import cliente1 from './Imagem/cliente1.png'
 import cliente2 from './Imagem/cliente2.png'
 import cliente3 from './Imagem/cliente3.png'

@@ -29,3 +29,13 @@ font-size:1.3em;
     border-radius:15px;
 
 }
+.buttonDetalheVoltar{
+    background-color: #8E564F;
+    color:white;
+    width: 200px;
+    height:40px;
+    border-radius: 5px;
+    outline:none;
+    font-size:1.3em;
+
+}

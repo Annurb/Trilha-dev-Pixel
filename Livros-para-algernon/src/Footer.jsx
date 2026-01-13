@@ -3,7 +3,7 @@ import instagram from './Imagem/instagram.png'
 import linkedin from './Imagem/linkedin.png'
 import logo from './Imagem/logo.png'
 import copyright from './Imagem/copyright.png'
-import './Footer.css'
+import './Style/Footer.css'
 
 export default function Footer(){
     return(

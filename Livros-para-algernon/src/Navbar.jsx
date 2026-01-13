@@ -10,7 +10,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import logo from './Imagem/Logo.png'
-import './Navbar.css'
+import './Style/Navbar.css'
 
 const pages = [{label:'SOBRE', href:'#containerSobre'}, {label:'BENEFÍCIOS', href:'#beneficios'}, {label:'DEPOIMENTOS', href:'#depoimentos'}, {label:'CONTATO', href:'#contato'}];
 

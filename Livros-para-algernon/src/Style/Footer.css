@@ -1,5 +1,5 @@
 .footerContainer{
-    height:350px;
+    min-height:350px;
     background-color: #8E564F;
     display:grid;
     grid-template-columns:repeat(4, 1fr);

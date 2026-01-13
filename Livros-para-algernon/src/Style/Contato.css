@@ -6,7 +6,7 @@
 .boxContato{
     border:1px solid #AAAAAA;
     border-radius:10px;
-    height:700px;
+    min-height:700px;
     width:80%;
     align-self:center;
     display:flex;

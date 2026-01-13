@@ -1,11 +1,14 @@
 import Catalogo from "./Catalogo";
 import carrinho from './Imagem/carrinho.png'
 import search from './Imagem/search.png'
-import './Livros.css'
+import './Style/Livros.css'
 
 import {data} from './LivrosImagem/1data'
 import {data1} from './LivrosImagem/1data'
 import {data2} from './LivrosImagem/1data'
+
+import { Link } from "react-router-dom";
+
 
 export default function Livros(){
     return(
@@ -16,7 +19,13 @@ export default function Livros(){
                     <input type="search" placeholder='Search'/>
                     <img src={search} alt="icone search" />
                     </div>
+                    <Link
+                        to={`/Carrinho`}
+                        key={"carrinho"}
+                        className='linkCard'
+                      >
                 <img src={carrinho} alt="carrinho de compras" />
+                </Link>
             </div>
             <h2>Romance:</h2>
             <Catalogo itens={data}/>

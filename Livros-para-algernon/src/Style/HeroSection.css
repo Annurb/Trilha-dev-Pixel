@@ -1,6 +1,6 @@
 #container {
     background-color: #CED0BA;
-    height: 700px;
+    min-height: 700px;
     display: flex;
     flex-direction:row;
     justify-content:space-between;

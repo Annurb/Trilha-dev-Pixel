@@ -1,6 +1,6 @@
 import imgHero from './Imagem/imgHero.jpg'
-import './HeroSection.css'
-import './buttons.css'
+import './Style/HeroSection.css'
+import './Style/buttons.css'
 
 export default function HeroSection(){
     return(

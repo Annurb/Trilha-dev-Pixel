@@ -1,7 +1,7 @@
 import library1 from './Imagem/library1.png'
 import library2 from './Imagem/library2.png'
 import donoElivro from './Imagem/donoElivro.png'
-import './Sobre.css'
+import './Style/Sobre.css'
 
 export default function Sobre(){
     return(

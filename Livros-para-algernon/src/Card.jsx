@@ -1,5 +1,5 @@
-import './Card.css'
-import './buttons.css'
+import './Style/Card.css'
+import './Style/buttons.css'
 
 export default function Card({image, name, autor, capa, price}){
     return(

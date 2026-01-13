@@ -1,8 +1,10 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import './Catalogo.css'
+import './Style/Catalogo.css'
 import Card from "./Card";
+
+import { Link } from "react-router-dom";
 
 export default function Catalogo({itens}){
       var settings = {
@@ -41,8 +43,15 @@ export default function Catalogo({itens}){
     return(
         <div className='Catalogo'>
             <Slider {...settings}>
+              
                    {itens && itens.map((item) =>(
-                      <Card key ={item.id} image={item.image} name={item.name} autor={item.autor} capa={item.capa} price={item.price}/>
+                     <Link
+    to={`/livro/${item.id}`}
+    key={item.id}
+    className='linkCard'
+  >
+                        <Card image={item.image} name={item.name} autor={item.autor} capa={item.capa} price={item.price}/>
+                        </Link>
                  ))}    
                 </Slider>
                 </div>

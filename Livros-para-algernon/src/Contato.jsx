@@ -1,5 +1,5 @@
-import './Contato.css'
-import './buttons.css'
+import './Style/Contato.css'
+import './Style/buttons.css'
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
 
