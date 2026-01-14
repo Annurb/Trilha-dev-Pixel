@@ -50,3 +50,24 @@ margin-bottom:20px;
 color:#532728;
 
 }
+.cartIcon {
+  position: relative;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.cartCount {
+  position: absolute;
+  top: -6px;
+  right: 20px;
+  background: #8e564f;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

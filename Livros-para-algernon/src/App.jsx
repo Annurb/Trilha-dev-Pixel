@@ -13,20 +13,21 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Components from './Components';
 import LivroDetalhe from "./livroDetalhe";
 import Carrinho from './Carrinho';
+import { CartProvider } from "./context/CartContext";
 
 function App() {
 
   return (
-    <>
         <BrowserRouter>
+        <CartProvider>
       <Routes>
         <Route path="/" element={<Components />} />
         <Route path="/livro/:id" element={<LivroDetalhe />} />
-        <Route path="/Carrinho" element={<Carrinho />} />
+        <Route path="/carrinho" element={<Carrinho />} />
       </Routes>
+      </CartProvider>
       </BrowserRouter>
 
-   </>
   )
 }
 

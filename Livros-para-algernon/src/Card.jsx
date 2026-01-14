@@ -1,15 +1,25 @@
 import './Style/Card.css'
 import './Style/buttons.css'
 
-export default function Card({image, name, autor, capa, price}){
+import { Link } from "react-router-dom";
+import { useCart } from "./context/CartContext";
+
+export default function Card({image, name, autor, capa, price, id}){
+    const {addToCart} = useCart()
+
     return(
-        <div className='card'>
+    <div className='card'>
+    <Link
+    to={`/livro/${id}`}
+    className='linkCard'
+  >
             <div className='cardImg'><img src={image} alt="" /></div>
             <p className='cardNome'>{name}</p>
             <p className='cardAutor'>{autor}</p>
             <p className='cardCapa'>Capa {capa}</p>
             <p className='cardPreco'><span>R$</span>{price}</p>
-            <button className='adicionarCarrinho'>Adicionar ao carrinho</button>
+            </Link>
+            <button onClick={()=> addToCart({id, image, name, autor, capa, price})}className='adicionarCarrinho'>Adicionar ao carrinho</button>
             
         </div>
     )

@@ -4,10 +4,17 @@ import {data1} from './LivrosImagem/1data'
 import {data2} from './LivrosImagem/1data'
 import './Style/buttons.css'
 import './Style/LivroDetalhe.css'
+import { Link } from "react-router-dom";
+
+import { useCart } from "./context/CartContext";
 
 import {useNavigate} from "react-router-dom";
 
+import {useState} from 'react'
+
 export default function LivroDetalhe() {
+  const[adicionado, setAdicionado] = useState(false)
+
   const { id } = useParams();
 
   const navegar = useNavigate();
@@ -26,6 +33,15 @@ export default function LivroDetalhe() {
       return livro3
     }
   }
+  const Name = acharLivro().name
+  const Image = acharLivro().image
+  const Id = acharLivro().id
+  const Autor = acharLivro().autor
+  const Capa = acharLivro().capa
+  const Sinopse = acharLivro().sinopse
+  const Price = acharLivro().price
+
+  const { cart, addToCart } = useCart();
 
   return (
     <div className='livroDetalhe'>
@@ -34,21 +50,35 @@ export default function LivroDetalhe() {
         <button className='buttonDetalheVoltar' onClick={() => navegar(-1)}>Voltar</button>
       </div>
       <div className="flexDetalhe">
-        <div className="imgDetalhe"><img src={acharLivro().image} alt="imagem do livro" /></div>
+        <div className="imgDetalhe"><img src={Image} alt="imagem do livro" /></div>
          <div className="detalheTexto">
-           <h1>{acharLivro().name}</h1>
-           <h2>{acharLivro().autor}</h2>
-           <h3>Capa {acharLivro().capa}</h3>
-           <div className='detalheScroll'><p>{acharLivro().sinopse}</p></div>
+           <h1>{Name}</h1>
+           <h2>{Autor}</h2>
+           <h3>Capa {Capa}</h3>
+           <div className='detalheScroll'><p>{Sinopse}</p></div>
          </div>
          <div className='linhaDetalhe'></div>
          <div className="precoDetalhe">
            <h2>Por apenas: </h2>
-           <h1><span>R$</span>{acharLivro().price}</h1>
+           <h1><span>R$</span>{Price}</h1>
            <p>Frete grátis para todo o Brasil a partir de 20 reais</p>
+
            <div className="buttonAdicionar">
-             <button className='adicionarCarrinho' style={{backgroundColor: '#532728'}}>Adicionar ao carrinho</button>
-             <button className='adicionarCarrinho' >Comprar agora</button>
+
+             <button className='adicionarCarrinho' style={{backgroundColor: '#532728'}}onClick={()=> {addToCart({id:Id, image:Image,name: Name, autor:Autor, capa:Capa,price: Price});
+            setAdicionado(true);
+            setTimeout(() => {
+              setAdicionado(false);
+            }, 2000)
+            }}>Adicionar ao carrinho</button>
+             {adicionado && (
+              <p className='mensagemCarrinho'> Livro adicionado ao carrinho!</p>
+             )}
+             <Link
+                        to={`/carrinho`}
+                        key={"carrinho"}   
+                      >
+             <button className='adicionarCarrinho' >Comprar agora</button></Link>
       </div>
          </div>
        </div>
