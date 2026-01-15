@@ -11,6 +11,12 @@ border-radius: 5px;
 outline:none;
 font-size:1.3em;
 margin-left:0;
+ &:hover{
+background-color:#8E564F;
+ }
+ &:active{
+    background-color: #532728;
+ }
 }
 .enviarForm{
     height:60px;
@@ -20,6 +26,12 @@ margin-left:0;
     color:#FFFF;
     font-size:1.5em;
     display: block;
+     &:hover{
+    background-color:#8E564F;
+ }
+  &:active{
+    background-color: #532728;
+ }
 }
 .adicionarCarrinho{
     background-color: #8E564F;
@@ -28,6 +40,21 @@ margin-left:0;
     height:40px;
     color:#F2EFCE;
     border-radius:15px;
+    &:hover{
+    background-color:#ad6960;
+    }
+     &:active{
+    background-color: #8E564F;
+ }
+}
+.adicionarCarrinho.adicionar{
+    background-color: #532728;
+    &:hover{
+    background-color:#8E564F;
+    }
+     &:active{
+    background-color: #532728;
+ }
 
 }
 .buttonDetalheVoltar{
@@ -38,5 +65,10 @@ margin-left:0;
     border-radius: 5px;
     outline:none;
     font-size:1.3em;
-
+        &:hover{
+    background-color:#ad6960;
+    }
+    &:active{
+    background-color: #8E564F;
+ }
 }

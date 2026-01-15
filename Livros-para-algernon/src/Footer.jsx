@@ -15,19 +15,29 @@ export default function Footer(){
                 <p>2026 - Todos os direitos resevados</p>
             </div></div>
             <ol>
-                <a className='linkFooter' href="#contato"><li>Início</li></a>
-                <a className='linkFooter'  href="#catalogo"><li>Catálogo / Livros</li></a>
-                <a className='linkFooter'  href="#sobre">
-                    <li>Sobre nós</li>
-                </a>
-                <a className='linkFooter'  href="#contato">
-                    <li>Contato</li>
-                </a>
+                <li><a className='linkFooter' href="#container">
+                    Início
+                    </a></li>
+                <li><a className='linkFooter'  href="#livros">
+                    Catálogo / Livros</a></li>
+                <li>
+                    <a className='linkFooter'  href="#containerSobre">
+                    Sobre nós
+                    </a>
+                </li>
+                <li>
+                    <a className='linkFooter'  href="#contato">
+                    Contato
+                    </a>
+                </li>
             </ol>
             <ol>
                 <li>Florianópolis</li>
                 <li>(48) 9999 - 9999</li>
-                <li>livrosparaalgernon@gmail.com</li>
+                <li><a href="mailto:livrosparaalgernon@gmail.com"
+                onClick={(e) => e.stopPropagation()}>
+                    livrosparaalgernon@gmail.com
+                </a></li>
             </ol>
             <div className='footerBaixo'>
                 <a href=""><img src={facebook} alt="facebook" /></a>

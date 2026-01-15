@@ -14,6 +14,7 @@
     height:80px;
     grid-column:1/-1;
 }
+
 .footerContainer p, ul{
     width: 400px;
 }
@@ -38,6 +39,7 @@
 }
 .footerContainer a{
     text-decoration:none;
+    color:white;
 }
 .footerBaixo{
     margin-top:42px;

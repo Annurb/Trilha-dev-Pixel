@@ -72,7 +72,7 @@ export default function LivroDetalhe() {
 
            <div className="buttonAdicionar">
 
-             <button className='adicionarCarrinho' style={{backgroundColor: '#532728'}}onClick={()=> {addToCart({id:Id, image:Image,name: Name, autor:Autor, capa:Capa,price: Price});
+             <button className='adicionarCarrinho adicionar' onClick={()=> {addToCart({id:Id, image:Image,name: Name, autor:Autor, capa:Capa,price: Price});
             setAdicionado(true);
             setTimeout(() => {
               setAdicionado(false);

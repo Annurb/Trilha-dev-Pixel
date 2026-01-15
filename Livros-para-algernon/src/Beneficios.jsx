@@ -14,7 +14,7 @@ export default function Beneficios(){
             <h2 className='h2Bene'>Frete 0:</h2>
             <h2 className='h2Bene'>Preços:</h2>
             <p className='itensBene'>Temos uma grande variedade de livros e estilos literários, diferente de qualquer outro.</p>
-            <p className='itensBene'>Possuímos frete grátis para todas as regiões do Brasil. </p>
+            <p className='itensBene'>Possuímos frete grátis para todas as regiões do Brasil em compras a partir de 20 reais. </p>
             <p className='itensBene'>Temos os melhores preços do mercado, com diversos fornecedores de diferentes lugares.</p>
         </div>
     )
