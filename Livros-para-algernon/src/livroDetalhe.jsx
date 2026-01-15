@@ -10,6 +10,8 @@ import { useCart } from "./context/CartContext";
 
 import {useNavigate} from "react-router-dom";
 
+import {useContext} from 'react'
+
 import {useState} from 'react'
 
 export default function LivroDetalhe() {
@@ -41,7 +43,12 @@ export default function LivroDetalhe() {
   const Sinopse = acharLivro().sinopse
   const Price = acharLivro().price
 
-  const { cart, addToCart } = useCart();
+  const { addToCart } = useCart();
+
+  function handleBuyNow(){
+    addToCart({id:Id, image:Image,name: Name, autor:Autor, capa:Capa,price: Price})
+    navegar('/carrinho')
+  }
 
   return (
     <div className='livroDetalhe'>
@@ -74,11 +81,7 @@ export default function LivroDetalhe() {
              {adicionado && (
               <p className='mensagemCarrinho'> Livro adicionado ao carrinho!</p>
              )}
-             <Link
-                        to={`/carrinho`}
-                        key={"carrinho"}   
-                      >
-             <button className='adicionarCarrinho' >Comprar agora</button></Link>
+             <button onClick = {handleBuyNow} className='adicionarCarrinho' >Comprar agora</button>
       </div>
          </div>
        </div>
