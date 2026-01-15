@@ -2,12 +2,12 @@
  import { useCart } from "./context/CartContext";
 
 
-const TableRow = ({item, onRemove,addCart, subCart, totalItem}) => {
+const TabelaProduto = ({item, onRemove,addCart, subCart, totalItem}) => {
 
   return (
     <tr>
       <td>
-        <div className='product'>
+        <div className='produto'>
           <img src={item.image} alt='' />
           <div className='info'>
             <div className='name'>{item.name}</div>
@@ -29,7 +29,7 @@ const TableRow = ({item, onRemove,addCart, subCart, totalItem}) => {
       </td>
       <td>{totalItem.toFixed(2)}</td>
       <td>
-        <button className='remove' onClick={() =>onRemove(item.id)}>
+        <button className='remover' onClick={() =>onRemove(item.id)}>
           <i className='bx bx-x'></i>
         </button>
       </td>
@@ -37,4 +37,4 @@ const TableRow = ({item, onRemove,addCart, subCart, totalItem}) => {
   );
 };
 
-export default TableRow;
+export default TabelaProduto;

@@ -1,4 +1,4 @@
-import TableRow from './TableRow'
+import TabelaProduto from './TabelaProduto'
 import './Style/Carrinho.css'
 import { useState } from 'react';
 import { useCart } from "./context/CartContext";
@@ -12,8 +12,10 @@ export default function Carrinho(){
 
     return(
         <div className='containerCarrinho'>
-            <h1>Seu carrinho:</h1>
-            <button className='buttonDetalheVoltar' onClick={() => navegar(-1)}>Voltar</button>
+            <div className="containerCarrinhoVoltar">
+              <h1>Seu carrinho:</h1>
+              <button className='buttonDetalheVoltar' onClick={() => navegar(-1)}>Voltar</button>
+            </div>
             <main>
             <div className='content'>
                 <section>
@@ -37,15 +39,15 @@ export default function Carrinho(){
           )}
 
           {cart.map(item => (
-            <TableRow key={item.id} item={item} onRemove={removeFromCart} addCart = {addToCart} subCart = {subQuantity} totalItem={totalItem(item)} />
+            <TabelaProduto key={item.id} item={item} onRemove={removeFromCart} addCart = {addToCart} subCart = {subQuantity} totalItem={totalItem(item)} />
           ))}
-                    </tbody>
-                    </table>
-                    </section>
-                    <button onClick = {removeCart}>Limpar carrnho</button>
-                    <aside>
+          </tbody>
+          </table>
+          <button className='adicionarCarrinho' onClick = {removeCart}>Limpar carrinho</button>
 
-        <div className='box'>
+        </section>                    
+        <aside>
+        <div className='caixa'>
         <header>Resumo da compra</header>
         <div className='info'>
           <div>
@@ -62,8 +64,8 @@ export default function Carrinho(){
           <span>R$ {totalFinal.toFixed(2)}</span>
         </footer>
       </div>
-      <button>Finalizar Compra</button>
-                    </aside>
+      <button className='buttonChamada'>Finalizar Compra</button>
+      </aside>
                 
             </div>
            </main>

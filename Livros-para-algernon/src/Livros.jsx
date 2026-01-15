@@ -50,11 +50,11 @@ export default function Livros(){
                 <Catalogo itens={resultados}/>
             </div>):
                        (<div>
-            <h2>Romance:</h2>
+            <h2>Romance/ Fantasia:</h2>
             <Catalogo itens={data}/>
-            <h2>Terror:</h2>
+            <h2>Terror/ Suspense:</h2>
             <Catalogo itens={data1}/>
-            <h2>Filosofia: </h2>
+            <h2>Filosofia/ Estudos: </h2>
             <Catalogo itens={data2}/>
             </div>)}
 

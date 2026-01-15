@@ -44,7 +44,7 @@ border-radius: 10px;
     width:40px;
     margin-top:20px;
 }
-.containerLivros>h2{
+.containerLivros h2{
 font-size:2em;
 margin-bottom:20px;
 color:#532728;

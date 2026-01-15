@@ -1,94 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 @import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
 /*css base, vai ser alterado*/
 
 .containerCarrinho{
     margin:40px;
+    font-family: 'Inter', sans-serif;
+}
+.containerCarrinhoVoltar{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom:60px;
+
+}
+.content{
+  display:flex;
+  flex-direction:row;
+  gap:30px;
 }
 .containerCarrinho img{
     height:100px;
 }
 
-.containerCarrinho >h1{
-    text-align: center;
-    margin-bottom:40px;
-}
-
-body {
-  background: white;
-  font-family: 'Lato', sans-serif;
-
-  #root {
-    > header {
-      background: #111;
-      color: white;
-      font-size: 24px;
-      padding: 20px 0;
-
-      display: flex;
-      justify-content: center;
-    }
-    > main {
-      background: #fff;
-      padding: 0 30px 30px;
-
-      .page-title {
-        font-size: 40px;
-        padding: 50px 0;
-        text-align: center;
-      }
-      .content {
-        display: flex;
-        flex-direction: row;
-
-
-        section {
-          flex: 1;
-        }
-        aside {
-          min-width: 250px;
-        }
-      }
-    }
-  }
-}
-
 button {
   cursor: pointer;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
-
+.content>section{
+  width: 60%;
+}
 table {
   width: 100%;
   border-collapse: collapse;
-
-  thead {
-    tr {
-      border-bottom: 3px solid #eee;
-      th {
+}
+thead >tr{
+    border-bottom: 2px solid #ddd;
+  }
+  
+tr > th {
         text-align: left;
         padding-bottom: 10px;
         text-transform: uppercase;
         color: #666;
-      }
-    }
   }
+
   tbody {
     tr {
-      border-bottom: 3px solid #eee;
+      border-bottom: 1px solid #eee;
 
-      &:last-child {
+    }
+    tr:last-child {
         border: 0;
-      }
+    }
 
       td {
         padding: 30px 0;
+        
       }
     }
-  }
-}
 
-.product {
+
+.produto {
   display: flex;
   align-items: center;
 
@@ -107,13 +78,16 @@ table {
     }
   }
 }
+aside{
+  width:40%;
+}
 .qty {
   background: #eee;
-  display: inline-flex;
+  display: flex;
   padding: 0 0;
   justify-content: space-around;
   align-items: center;
-  min-width: 60px;
+  width: 120px;
   border-radius: 20px;
   overflow: hidden;
   height: 30px;
@@ -125,8 +99,10 @@ table {
   button {
     display: flex;
     align-items: center;
+    justify-content: center;
     background: transparent;
     border: 0;
+    margin:0;
     padding: 0 10px;
     font-size: 20px;
     height: 100%;
@@ -135,8 +111,12 @@ table {
       background-color: #ddd;
     }
   }
+  i{
+      width:16px;
+      text-align:center;
+    }
 }
-.remove {
+.remover {
   background: #eee;
   border: 0;
   width: 30px;
@@ -153,10 +133,10 @@ table {
 }
 
 aside {
-  margin-left: 30px;
-  .box {
+  .caixa {
     margin-bottom: 15px;
     border: 1px solid #ccc;
+    border-radius: 15px;
 
     background: #eee;
     color: #222;
@@ -170,7 +150,7 @@ aside {
       padding: 20px;
       font-size: 16px;
 
-      > div {
+      >div {
         display: flex;
         justify-content: space-between;
         margin-bottom: 10px;
@@ -180,38 +160,17 @@ aside {
           margin: 0;
         }
       }
-      button {
-        color: #28a745;
-        background: transparent;
-        border: 0;
-        display: flex;
-        align-items: center;
-        font-size: 16px;
-
-      }
     }
     footer {
       padding: 15px 20px;
       background: #ddd;
+      border-radius:0 0 15px 15px;
       font-size: 18px;
       display: flex;
       justify-content: space-between;
     }
   }
-
-  > button {
-    border: 0;
-    padding: 15px 0;
-    color: white;
-    background: #28a745;
-    display: block;
-    width: 100%;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 16px;
-
-    &:hover {
-      background-color: #3bc55b;
-    }
-  }
+}
+button{
+  margin-left:0;
 }
