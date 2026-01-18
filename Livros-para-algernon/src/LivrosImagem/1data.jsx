@@ -10,7 +10,7 @@ import eAssimQueAcaba from './É assim que acaba.webp'
 import oColecionador from './O colecionador.webp'
 import oQueAconteceuComAnnie from './O que aconteceu com annie.webp'
 import saborAmargo from './Sabor amargo.webp'
-import bomDiaVero from './Bom dia, Verônica.webp'
+import bomDiaVero from './Bom dia, verônica.webp'
 import diasPerfeitos from './Dias perfeitos.webp'
 
 /*Ciencia e filosofia */
