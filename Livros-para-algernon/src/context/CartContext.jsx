@@ -1,5 +1,5 @@
 { /* import das ferramentas para gerenciar o estado */ }
-import { createContext, useContext, useState } from 'react'
+import { createContext, useContext, useState, useEffect } from 'react'
 
 { /* criação do espaço para os dados */ }
 const CartContext = createContext()
@@ -7,7 +7,15 @@ const CartContext = createContext()
 { /* exportação do componente com o props para que todos os componentes filhos sejam renderizados pelo provider */ }
 export function CartProvider({ children }) {
 
-  const [cart, setCart] = useState([])
+{ /* useState com useEffect, para guardar o carrinho e salvá-lo mesmo ao atualizar a pagina */ }
+  const [cart, setCart] = useState(() => {
+  const storedCart = localStorage.getItem("cart");
+  return storedCart ? JSON.parse(storedCart) : [];
+});
+
+useEffect(() => {
+  localStorage.setItem("cart", JSON.stringify(cart));
+}, [cart]);
 
   { /* funções do carrinho */ }
   const addToCart = (product) => {
@@ -18,7 +26,7 @@ export function CartProvider({ children }) {
     if(itemExistente){
       return prevCart.map(item => item.id === product.id? {...item, quantity:item.quantity+1}:item)
     }
-
+    
     return [...prevCart, {...product, quantity:1}]
   })
   }
