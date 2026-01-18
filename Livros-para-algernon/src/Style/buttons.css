@@ -1,12 +1,12 @@
  /* css do botoes */
 button{
     border:none;
-    color:white
 }
 .buttonChamada{
 background-color: #532728;
 padding-top:18px;
 padding-bottom:18px;
+color:white;
 width:100%;
 border-radius: 5px;
 outline:none;
@@ -25,6 +25,7 @@ background-color:#8E564F;
     border-radius:15px;
     background-color: #532728;
     font-size:1.5em;
+    color:white;
     display: block;
      &:hover{
     background-color:#8E564F;
@@ -38,6 +39,7 @@ background-color:#8E564F;
     font-size:1.5em;
     width: 260px;
     height:40px;
+    color:white;
     border-radius:15px;
     &:hover{
     background-color:#ad6960;
@@ -48,6 +50,7 @@ background-color:#8E564F;
 }
 .adicionarCarrinho.adicionar{
     background-color: #532728;
+    color:white;
     &:hover{
     background-color:#8E564F;
     }
