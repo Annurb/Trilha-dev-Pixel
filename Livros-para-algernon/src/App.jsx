@@ -8,7 +8,7 @@ import { CartProvider } from "./context/CartContext";
 
 /* componentes para as rotas */
 import Components from './Components';
-import LivroDetalhe from "./LivroDetalhe";
+import LivroDetalhe from "./livroDetalhe";
 import Carrinho from './Carrinho';
 
 function App() {
