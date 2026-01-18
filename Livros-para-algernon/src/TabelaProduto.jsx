@@ -1,6 +1,4 @@
-
- import { useCart } from "./context/CartContext";
-
+ { /* componente dos detalhes do produto no carrinho */ }
 
 const TabelaProduto = ({item, onRemove,addCart, subCart, totalItem}) => {
 

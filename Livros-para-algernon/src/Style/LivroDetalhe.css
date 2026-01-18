@@ -92,6 +92,9 @@
 .linhaDetalhe{
     display:none;
 }
+.detalheScroll{
+    margin:0 auto;
+}
 .precoDetalhe{
     margin:30px;
 }

@@ -1,3 +1,4 @@
+ { /* função components para mostrar todas as seções, necessária para o uso do react-router-dom*/ }
 import Navbar from './Navbar'
 import HeroSection from './HeroSection'
 import Sobre from './sobre'
@@ -6,20 +7,18 @@ import Depoimentos from './Depoimentos'
 import Contato from './Contato'
 import Footer from './Footer'
 import Livros from './Livros'
-import Card from './Card'
-import bomdiave from './LivrosImagem/Bom dia, verônica.webp'
 
 export default function Components(){
     return(
-        <div>
-            <Navbar/>
+        <>
+    <Navbar/>
     <HeroSection/>
     <Sobre/>
     <Beneficios/>
-    <Depoimentos/>
     <Livros/>
+    <Depoimentos/>
     <Contato/>
     <Footer/>
-        </div>
+        </>
     )
 }

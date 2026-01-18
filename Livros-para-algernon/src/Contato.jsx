@@ -1,9 +1,15 @@
+ { /* seção de contato */ }
 import './Style/Contato.css'
 import './Style/buttons.css'
+
+ { /* uso da api emailJs para mandar email automaticamente */ }
 import { useState } from 'react'
+
 import emailjs from '@emailjs/browser'
 
 export default function Contato() {
+
+   { /* useState para controle */ }
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
@@ -20,6 +26,8 @@ export default function Contato() {
       message: message,
       email: email
     }
+
+     { /* envio do serviço */ }
     emailjs.send('service_o36mc3n', 'template_ckufcqk', templateParams, 'tPBKEpTq0rD7wLTMH').then((response) => {
       console.log('Email enviado', response.status, response.text)
       setName('')

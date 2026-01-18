@@ -1,9 +1,11 @@
+{ /* seção de beneficios */ }
 import bene1 from './Imagem/bene1.png'
 import bene2 from './Imagem/bene2.png'
 import bene3 from './Imagem/bene3.png'
 import './Style/Beneficios.css'
 
 export default function Beneficios(){
+    
     return(
         <div className='beneficiosContainer' id='beneficios'>
             <h1 className='tituloBene'>Benefícios:</h1>

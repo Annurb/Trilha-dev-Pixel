@@ -63,6 +63,7 @@ img#imgHero {
 
     scroll-snap-type: x mandatory;
   }
+  
   .containerImg, #titulo{
     min-width:100vw;
     height:100vh;

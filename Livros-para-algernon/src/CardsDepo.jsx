@@ -1,3 +1,4 @@
+{ /* seção dos cards de Depoimentos, onde ficam as análises dos clientes */ }
 import quotes from './Imagem/quotes.png'
 
 export default function CardsDepo({cor='#F3DDB6',nome='Desconhecido', texto, imagemCliente, nota}){

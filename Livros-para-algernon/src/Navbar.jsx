@@ -1,3 +1,4 @@
+ { /* seção do navbar, foi usado material mui */ }
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -12,9 +13,11 @@ import MenuItem from '@mui/material/MenuItem';
 import logo from './Imagem/Logo.png'
 import './Style/Navbar.css'
 
+ { /* paginas de pesquisa */ }
 const pages = [{label:'SOBRE', href:'#containerSobre'}, {label:'BENEFÍCIOS', href:'#beneficios'}, {label:'DEPOIMENTOS', href:'#depoimentos'}, {label:'CONTATO', href:'#contato'}];
 
 function Navbar() {
+   { /* funções pré-prontas do material */ }
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -26,6 +29,7 @@ function Navbar() {
 
   return (
     <AppBar position="fixed" style={{backgroundColor:'transparent', boxShadow:'none'}}>
+       { /* componetes do material */ }
       <Container id='containerBar' maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

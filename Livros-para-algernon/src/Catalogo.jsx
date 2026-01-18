@@ -1,16 +1,17 @@
+ { /* uso do react-slick para o scroll */ }
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+
 import './Style/Catalogo.css'
 import Card from "./Card";
 
 import { useEffect, useState } from "react";
 
-
-
 export default function Catalogo({itens}){
-  /*para, quando atualizar a pagina, nao bugar*/
-     const getSlides = () => {
+
+   { /* função para que, ao atualizar a página, o react-slick não bugue */ }
+    const getSlides = () => {
     const width = window.innerWidth;
 
     if (width >= 1300) return 4;
@@ -27,7 +28,7 @@ export default function Catalogo({itens}){
     return () => window.removeEventListener("resize", onResize);
   }, []);
 
-
+   { /* react-slick responsivo */ }
       var settings = {
     dots: true,
     infinite: itens.length > 4,
@@ -59,14 +60,12 @@ export default function Catalogo({itens}){
       }
     ]
   };
+
     return(
         <div className='Catalogo'>
-            <Slider  {...settings}>
-              
+            <Slider  {...settings}>             
                    {itens && itens.map((item) =>(
-
-                        <Card id={item.id} image={item.image} name={item.name} autor={item.autor} capa={item.capa} price={item.price}/>
-                     
+                        <Card id={item.id} image={item.image} name={item.name} autor={item.autor} capa={item.capa} price={item.price}/>           
                  ))}    
                 </Slider>
                 </div>

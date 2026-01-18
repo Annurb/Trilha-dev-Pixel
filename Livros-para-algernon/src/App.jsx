@@ -1,28 +1,27 @@
 import './Style/App.css'
-import Navbar from './Navbar'
-import HeroSection from './HeroSection'
-import Sobre from './sobre'
-import Beneficios from './Beneficios'
-import Depoimentos from './Depoimentos'
-import Contato from './Contato'
-import Footer from './Footer'
-import Livros from './Livros'
-import Card from './Card'
-import bomdiave from './LivrosImagem/Bom dia, verônica.webp'
+
+/* import para o uso de rotas para entrar em outra página ao clicar*/
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Components from './Components';
-import LivroDetalhe from "./livroDetalhe";
-import Carrinho from './Carrinho';
+
+{ /* importação do cartProvider para gerenciar e compartilhar o estado do carrinho em diferentes páginas*/ }
 import { CartProvider } from "./context/CartContext";
+
+/* componentes para as rotas */
+import Components from './Components';
+import LivroDetalhe from "./LivroDetalhe";
+import Carrinho from './Carrinho';
 
 function App() {
 
   return (
-        <BrowserRouter>
-        <CartProvider>
-      <Routes>
+      <BrowserRouter>
+      <CartProvider>
+      <Routes>       
+         { /* rota principal */ }
         <Route path="/" element={<Components />} />
+         { /* rota para os cada livro ao clicar no card */ }
         <Route path="/livro/:id" element={<LivroDetalhe />} />
+         { /* rota para o carrinho */ }
         <Route path="/carrinho" element={<Carrinho />} />
       </Routes>
       </CartProvider>

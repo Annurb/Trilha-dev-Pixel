@@ -1,3 +1,4 @@
+ { /* seção de depoimentos dos clientes */ }
 import './Style/Depoimentos.css'
 import cliente1 from './Imagem/cliente1.png'
 import cliente2 from './Imagem/cliente2.png'
@@ -6,10 +7,10 @@ import cliente4 from './Imagem/cliente4.png'
 import estrelasNota from './Imagem/estrelasNota.png'
 import CardsDepo from './CardsDepo'
 
-
 export default function Depoimentos(){
     return(
         <div className='containerDepoimentos' id='depoimentos'>
+             { /* uso do componente cardsDepo e passagem de props*/ }
             <h1 className='tituloDepo'>Depoimentos: </h1>
             <h2 className='h2Depo'>Leia o que nossos clientes dizem</h2>
             <CardsDepo nome='Ana S.' texto='O Livros para Algernon é o meu refúgio favorito. A curadoria é impecável e sempre encontro edições raras que parecem ter sido escolhidas a dedo para mim. É mais que um sebo, é uma experiência literária.' imagemCliente={cliente1} nota={estrelasNota}/>

@@ -1,3 +1,4 @@
+ { /* seção sobre */ }
 import library1 from './Imagem/library1.png'
 import library2 from './Imagem/library2.png'
 import donoElivro from './Imagem/donoElivro.png'

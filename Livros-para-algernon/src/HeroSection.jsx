@@ -1,3 +1,4 @@
+ { /* seção heroSection */ }
 import imgHero from './Imagem/imgHero.jpg'
 import './Style/HeroSection.css'
 import './Style/buttons.css'
@@ -11,6 +12,7 @@ export default function HeroSection(){
             <div id='linha'></div>
             <div className='encontreTitulo'><h1>ENCONTRE OS MELHORES <span>LIVROS</span></h1>
             <p>Leia, ame e desfrute cada momento com seu livro</p>
+             { /* botão para levar Às compras */ }
             <a href="#livros"><button className='buttonChamada'>COMPRE AGORA</button></a></div>
         </div>
         </div>

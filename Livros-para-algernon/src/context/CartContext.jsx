@@ -1,10 +1,15 @@
+{ /* import das ferramentas para gerenciar o estado */ }
 import { createContext, useContext, useState } from 'react'
 
+{ /* criação do espaço para os dados */ }
 const CartContext = createContext()
 
+{ /* exportação do componente com o props para que todos os componentes filhos sejam renderizados pelo provider */ }
 export function CartProvider({ children }) {
+
   const [cart, setCart] = useState([])
 
+  { /* funções do carrinho */ }
   const addToCart = (product) => {
     setCart(prevCart => {
     const itemExistente = prevCart.find(
@@ -13,6 +18,7 @@ export function CartProvider({ children }) {
     if(itemExistente){
       return prevCart.map(item => item.id === product.id? {...item, quantity:item.quantity+1}:item)
     }
+
     return [...prevCart, {...product, quantity:1}]
   })
   }
@@ -37,6 +43,7 @@ export function CartProvider({ children }) {
   const totalItem = (product) =>{
         return Number(product.price.replace(',','.'))*product.quantity
   }
+
   const total = cart.reduce((acc, item) => acc+Number(item.price.replace(',','.'))*item.quantity, 0)
 
   let totalFinal = 0 
@@ -49,7 +56,10 @@ export function CartProvider({ children }) {
   }
 
   const removeCart = () => {setCart([])}
+
+  { /* export de todas as funções */ }
   return (
+    
     <CartContext.Provider value={{ cart, addToCart, removeFromCart, total, subQuantity, totalFinal, totalItem, removeCart}}>
       {children}
     </CartContext.Provider>

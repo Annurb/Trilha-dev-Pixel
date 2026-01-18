@@ -1,3 +1,4 @@
+ { /* seção do footer */ }
 import facebook from './Imagem/facebook.png'
 import instagram from './Imagem/instagram.png'
 import linkedin from './Imagem/linkedin.png'
@@ -14,7 +15,8 @@ export default function Footer(){
                 <img src={copyright} alt="copyright" />
                 <p>2026 - Todos os direitos resevados</p>
             </div></div>
-            <ol>
+            <ol> 
+                { /* links para voltar às seções anteriores */ }
                 <li><a className='linkFooter' href="#container">
                     Início
                     </a></li>
@@ -34,15 +36,16 @@ export default function Footer(){
             <ol>
                 <li>Florianópolis</li>
                 <li>(48) 9999 - 9999</li>
+                 { /* envio para email funcional */ }
                 <li><a className='emailGrande' href="mailto:livrosparaalgernon@gmail.com"
                 onClick={(e) => e.stopPropagation()}>
                     livrosparaalgernon@gmail.com
                 </a></li>
             </ol>
             <div className='footerBaixo'>
-                <a href=""><img src={facebook} alt="facebook" /></a>
-                <a href=""><img src={instagram} alt="instagram" /></a>
-                <a href=""><img src={linkedin} alt="linkedin" /></a>
+                <a href="/"><img src={facebook} alt="facebook" /></a>
+                <a href="/"><img src={instagram} alt="instagram" /></a>
+                <a href="/"><img src={linkedin} alt="linkedin" /></a>
             </div>
         </div>
     )

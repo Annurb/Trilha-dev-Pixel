@@ -1,6 +1,7 @@
+ /* css das fontes */ 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-h3, h1, h2, p, li{
+h3, h1, h2, p, li, span{
     font-family: 'Inter', sans-serif;
 }
 h3{
