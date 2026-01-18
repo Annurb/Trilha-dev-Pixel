@@ -7,6 +7,12 @@
     text-align:center;
     row-gap: 0;
 }
+.beneficios{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+
+}
 h1.tituloBene{
     margin-top: 2em;
     margin-left:2em;
@@ -15,11 +21,21 @@ h1.tituloBene{
     justify-self:left;
 }
 .h2Bene{
-    margin-top:-40px;
    font-size: 2em; 
    font-weight: 700;
+   margin-top:3%;
+   max-width:90%;
 }
 .itensBene{
-    margin-top:-60px;
-    width:340px;
+    margin-top:3%;
+    max-width:80%;
+}
+@media(max-width:900px){
+    .beneficiosContainer{
+        grid-template-columns:repeat(1, 1fr);
+        min-height:1000px;
+    }
+    .beneficios img{
+        width:100px;
+    }
 }

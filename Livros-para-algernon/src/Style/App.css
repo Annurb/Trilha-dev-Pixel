@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 h3, h1, h2, p, li{
     font-family: 'Inter', sans-serif;
 }
@@ -24,4 +26,9 @@ html{
 *::before,
 *::after {
   box-sizing: border-box;
+}
+@media(max-width:700px){
+    h1{
+        font-size:2em;
+    }
 }

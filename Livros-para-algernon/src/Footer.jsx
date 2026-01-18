@@ -34,7 +34,7 @@ export default function Footer(){
             <ol>
                 <li>Florianópolis</li>
                 <li>(48) 9999 - 9999</li>
-                <li><a href="mailto:livrosparaalgernon@gmail.com"
+                <li><a className='emailGrande' href="mailto:livrosparaalgernon@gmail.com"
                 onClick={(e) => e.stopPropagation()}>
                     livrosparaalgernon@gmail.com
                 </a></li>

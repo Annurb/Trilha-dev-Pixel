@@ -1,6 +1,5 @@
 
 @import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
-/*css base, vai ser alterado*/
 
 .containerCarrinho{
     margin:40px;
@@ -174,3 +173,59 @@ aside {
 button{
   margin-left:0;
 }
+@media(max-width:1250px){
+  .content{
+    flex-direction: column;
+    align-items: center;
+  }
+  .content section, aside{
+    width:100%;
+  }
+}
+@media (max-width: 700px) {
+  .containerCarrinhoVoltar{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+    thead {
+    display: none;
+  }
+    tr {
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+    td {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    flex-direction: column; 
+    text-align:center;
+    gap: 1px;
+    }
+    .priceProduto{
+      font-size:2em;
+    }
+
+    td::before {
+      margin-bottom: 0;
+    }
+
+    .produto {
+      flex-direction: column; 
+      align-items: center;
+    }
+
+    .produto .info {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+
+    .qty {
+      max-width: 100%; 
+      justify-content: space-between;
+    }
+  }

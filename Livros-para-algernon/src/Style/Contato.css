@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 .containerContato{
     display:flex;
     justify-content:center;
@@ -50,6 +52,20 @@
     width:87%;
     height:200px;
     padding-top:15px;
-    font-family:'inter', sans-serif;
+    font-family:'Inter', sans-serif;
     resize:none;
+}
+@media(max-width:700px){
+    .boxContato{
+        width:90%;
+    }
+    .boxContato input{
+        width:85%;
+    }
+    .boxContato h3,  textArea{
+        font-size:1.3em;
+    }
+    .boxContato input{
+        font-size:1.3em;
+    }
 }

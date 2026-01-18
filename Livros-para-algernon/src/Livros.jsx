@@ -28,7 +28,7 @@ export default function Livros(){
             <h1>Livros:</h1>
             <div className='pesquisaCarrinho'>
                 <div className='inputGroup'>
-                    <input type="search" placeholder='Search'
+                    <input type="text" placeholder='Search'
                     value={busca}
                     onChange={(e) =>setBusca(e.target.value)}/>
                     <img src={search} alt="icone search" />

@@ -4,44 +4,64 @@ import Slider from "react-slick";
 import './Style/Catalogo.css'
 import Card from "./Card";
 
+import { useEffect, useState } from "react";
+
+
 
 export default function Catalogo({itens}){
+  /*para, quando atualizar a pagina, nao bugar*/
+     const getSlides = () => {
+    const width = window.innerWidth;
+
+    if (width >= 1300) return 4;
+    if (width >= 960) return 3;
+    if (width >= 600) return 2;
+    return 1;
+  };
+
+  const [slides, setSlides] = useState(getSlides());
+
+  useEffect(() => {
+    const onResize = () => setSlides(getSlides());
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
+
+
       var settings = {
     dots: true,
-    infinite: true,
+    infinite: itens.length > 4,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    initialSlide: 0,
+    slidesToShow: slides,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1300,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          dots: true
+          slidesToShow: slides,
+          infinite: itens.length > 3
+        }
+      },
+      {
+        breakpoint: 960,
+        settings: {
+          slidesToShow: slides,
+          infinite: itens.length > 2
         }
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToShow: slides,
+          infinite: itens.length > 1
         }
       }
     ]
   };
     return(
         <div className='Catalogo'>
-            <Slider {...settings}>
+            <Slider  {...settings}>
               
                    {itens && itens.map((item) =>(
 

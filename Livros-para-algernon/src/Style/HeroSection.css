@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 #container {
     background-color: #CED0BA;
     min-height: 700px;
@@ -14,10 +16,10 @@
     background-color: black;
 }
 .encontreTitulo{
-    font-family: 'Kokoro', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin-top:10%;
     margin-left:15%;
-    width: 50%; 
+    max-width: 50%; 
     line-height: 1.3;
    
 }
@@ -29,14 +31,53 @@
     color: #8E564F;
     display:block;
     padding-top:10px;
-    font-weight: 600;
+    font-weight: 800;
 
 }
 .encontreTitulo p{
     margin:10% 0 10% 0;
     font-size:1.2em;
 }
-img#imgHero {
+.containerImg{
     height: 700px;
-    width: 800px;
+    max-width: 800px;
+}
+img#imgHero {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center top;
+}
+@media(max-width:915px){
+      #container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    height: 100vh;
+    min-height: unset;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    justify-content: flex-start;
+
+    scroll-snap-type: x mandatory;
+  }
+  .containerImg, #titulo{
+    min-width:100vw;
+    height:100vh;
+
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+  .containerImg {
+    order: 2;
+    max-width: 100%;
+  }
+
+  #titulo {
+    order: 1;
+
+  }
+
 }

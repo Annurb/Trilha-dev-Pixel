@@ -16,7 +16,7 @@
 }
 
 .footerContainer p, ul{
-    width: 400px;
+    max-width: 400px;
 }
 .footerContainer p, li{
     margin-left:80px;
@@ -54,4 +54,32 @@
 .footerBaixo img{
     height: 28px;
     margin:8px;
+}
+@media(max-width:840px){
+    .footerContainer{
+        display:flex;
+        flex-direction: column;
+    }
+    .footerContainer>img{
+        margin-left:40px;
+        width:80px;
+    }
+    .footerContainer p, ul, li {
+    margin-left:40px;
+   max-width:70%;
+   
+}
+.copyrightLinha >p{
+    margin-left:0;
+}
+.copyrightLinha img{
+    margin-left:40px;
+    
+}
+
+.emailGrande{
+ overflow-wrap:break-word;
+ word-wrap:break-word;
+}
+  
 }

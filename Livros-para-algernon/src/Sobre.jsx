@@ -12,7 +12,7 @@ export default function Sobre(){
             <h3 className='h3h1Sobre'>CRIADO SOB MEDIDA</h3>
             <h1 className='h3h1Sobre' >Sobre:</h1>
             <p>O Livros para Algernon é um sebo que nasceu da paixão por livros antigos e a vontade de recontar histórias que não perdem a validade. Ao escolher a Livros para Algernon, você participa de um consumo consciente e evita desperdício e ajuda na propagação de conhecimento.</p>
-            <div className='imagensSobre'>
+            <div className='imagensSobreIdoso'>
             <img src={donoElivro} alt="Dono do sebo" />
             </div>
             </div>

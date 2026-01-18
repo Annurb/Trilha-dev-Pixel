@@ -1,6 +1,7 @@
 .containerDepoimentos{
     display:grid;
     grid-template-columns:repeat(2, 1fr);
+    justify-content:center;
     justify-items:center;
     text-align:center;
 }
@@ -15,9 +16,9 @@ h1.tituloDepo{
     margin-bottom: 1.3em;
 }
 .cardDepo{
-    margin: 30px;
+    margin: 30px 0 30px 0;
     height:300px;
-    width:600px;
+    width:90%;
     border-radius:15px;
     display:grid;
     grid-template-columns:repeat(2, 1fr);
@@ -38,18 +39,50 @@ h1.tituloDepo{
 
 }
 .colunaDepo.texto{
-    width: 460px;
+    width: 80%;
     font-size:1.2em;
+    line-height:1.1em;
 }
 .linhaDepo{
     grid-row:span 2;
 }
+.fotoNota{
+    display:flex;
+    margin-bottom:10px;
+}
 .nomeNota{
-    margin-left:-140px;
+    margin-left:10px;
 }
 .nomeNota.nomeCliente{
     margin-top: 12px;
-    margin-bottom: -2em;
+    margin-bottom:3px;
     font-size:1.2em;
     font-weight:600;
+}
+@media(max-width:1000px){
+.containerDepoimentos{
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    align-items:center;
+
+}
+}
+@media(max-width:540px){
+    .cardDepo{
+        min-height:420px;
+    }
+    .linhaDepo{
+        height:80px;
+    }
+    .colunaDepo.texto.textoCliente{
+        width:70%;
+    }
+    .nomeNota.nomeCliente{
+        width:100%;
+    }
+    .nomeNota.nota{
+        max-width:100px;
+    }
+    
 }

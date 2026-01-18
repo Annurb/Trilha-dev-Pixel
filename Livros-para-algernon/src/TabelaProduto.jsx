@@ -6,7 +6,7 @@ const TabelaProduto = ({item, onRemove,addCart, subCart, totalItem}) => {
 
   return (
     <tr>
-      <td>
+      <td >
         <div className='produto'>
           <img src={item.image} alt='' />
           <div className='info'>
@@ -15,8 +15,8 @@ const TabelaProduto = ({item, onRemove,addCart, subCart, totalItem}) => {
           </div>
         </div>
       </td>
-      <td>{item.price}</td>
-      <td>
+      <td className='priceProduto'>R$ {item.price}</td>
+      <td >
         <div className='qty'>
           <button onClick={() => subCart(item)}>
             <i className='bx bx-minus'></i>
@@ -26,8 +26,8 @@ const TabelaProduto = ({item, onRemove,addCart, subCart, totalItem}) => {
             <i className='bx bx-plus'></i>
           </button>
         </div>
-      </td>
-      <td>{totalItem.toFixed(2)}</td>
+      </td >
+      <td >R$ {totalItem.toFixed(2)}</td>
       <td>
         <button className='remover' onClick={() =>onRemove(item.id)}>
           <i className='bx bx-x'></i>

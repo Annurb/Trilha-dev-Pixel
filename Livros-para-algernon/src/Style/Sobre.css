@@ -8,13 +8,26 @@
 .imagensSobre:nth-of-type(2){
     margin-top:3%;
     height: 85%;
+    margin-right:5%;
 }
-div.imagensSobre{
-    margin-top:2%;
+div.imagensSobreIdoso{
+    margin-top:3%;
     display:flex;
     justify-content:flex-end;
-
 }
 .h3h1Sobre{
     margin-bottom:3%;
+}
+@media(max-width:1020px){
+.imagensSobre:nth-of-type(2){
+    display:none;
+}
+}
+@media(max-width:800px){
+.imagensSobre:first-of-type{
+    display:none;
+}
+.imagensSobreIdoso img{
+    max-width:80%;
+}
 }
