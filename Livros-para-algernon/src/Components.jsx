@@ -7,6 +7,7 @@ import Depoimentos from './Depoimentos'
 import Contato from './Contato'
 import Footer from './Footer'
 import Livros from './Livros'
+import AcaoFinal from './AcaoFinal'
 
 export default function Components(){
     return(
@@ -18,6 +19,7 @@ export default function Components(){
     <Livros/>
     <Depoimentos/>
     <Contato/>
+    <AcaoFinal/>
     <Footer/>
         </>
     )

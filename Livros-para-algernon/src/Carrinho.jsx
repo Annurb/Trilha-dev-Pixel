@@ -57,7 +57,8 @@ export default function Carrinho(){
         </table>
 
          { /* botão limpar carrinho */ }
-        <button className='adicionarCarrinho' onClick = {removeCart}>Limpar carrinho</button>
+        <div className='buttonLimpar'><button className='adicionarCarrinho' onClick = {removeCart}>Limpar carrinho</button>
+        </div>
 
          { /* seção com as informação finais*/ }
       </section>                    
