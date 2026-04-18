@@ -1,3 +1,5 @@
+
+
 # Trilha dev Pixel
 
 Este projeto tem como foco a fabricação de uma landing page responsiva para a empresa júnior Pixel, a fim de testar os conhecimentos em HTML, CSS, JS e REACT, aprendidos através de um curso disponibilizado pela própria empresa.
@@ -7,3 +9,7 @@ O design do site foi pensado e feito através da plataforma figma, inspirado em 
 
 
 https://www.figma.com/design/EOt27WcP8f14e2V7NyrUVo/Untitled?node-id=0-1&t=OWMCR1kPwks9IsDu-1
+
+## Site
+
+https://livros-para-algernon.netlify.app/
